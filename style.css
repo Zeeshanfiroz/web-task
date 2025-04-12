@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  body {
+    background-color: #f2f2f2;
+    color: #333;
+  }
+  header {
+    background-color: #4a90e2;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .logo {
+    color: #fff;
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+  nav {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+
+  nav a:hover {
+    color: #3f2ccf;
+  }
+  .hero {
+    background: url('https://media.licdn.com/dms/image/v2/D4E12AQHKaI0ODVN7ww/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1677147422020?e=2147483647&v=beta&t=JUlFOxJB2egeqwwisUKVI2IvtwJYqdkv0w6NDKPvj2Y') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+    position: relative;
+  }
+
+  .hero-content {
+    position: relative;
+  }
+
+  .hero h1 {
+    font-size: 48px;
+  }
+
+  .hero p {
+    font-size: 20px;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  .section {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 10px 10px;
+  }
+
+  .section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .book-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+
+  .book {
+    background-color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    width: 220px;
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+
+  .book:hover {
+    transform: scale(1.05);
+  }
+
+  .book img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+
+  .book h4 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 6px;
+  }
+
+  .book p {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.4;
+  }
+  .about {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #fff;
+    margin-top: 40px;
+  }
+  .about p {
+    max-width: 600px;
+    margin: auto;
+    font-size: 16px;
+  }
+  footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #eee;
+    font-size: 14px;
+    color: #666;
+  }
+  @media (max-width: 600px) {
+    nav {
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      margin-top: 10px;
+    }
+
+    header {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
